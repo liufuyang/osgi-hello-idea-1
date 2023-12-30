@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1703941162278
+Bundle-Activator: org.example.HelloWorld
+Bundle-Description: A bundle that displays messages at startup and whe
+ n service events occur
+Bundle-ManifestVersion: 2
+Bundle-Name: Service listener example
+Bundle-SymbolicName: osgi-hello-idea-1
+Bundle-Vendor: Fuyang Liu A/S
+Bundle-Version: 1.0.0
+Created-By: 17.0.2 (Oracle Corporation)
+Import-Package: java.io,java.lang,org.osgi.framework;version="[1.10,2)
+ "
+Private-Package: org.example
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=17))"
+Tool: Bnd-7.0.0.202310060912
+
