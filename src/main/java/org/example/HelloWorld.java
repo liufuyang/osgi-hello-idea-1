@@ -5,9 +5,9 @@ import org.osgi.framework.BundleContext;
 
 public class HelloWorld implements BundleActivator {
   public void start(BundleContext ctx) {
-    System.out.println("Hello world, Liu.");
+    System.out.println("Hello world, Liu1.");
   }
   public void stop(BundleContext bundleContext) {
-    System.out.println("Goodbye world, Fuyang");
+    System.out.println("Goodbye world, Fuyang!");
   }
 }

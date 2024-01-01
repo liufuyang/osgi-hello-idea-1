@@ -1,6 +1,8 @@
 plugins {
     // id("java")
     id("biz.aQute.bnd.builder") version "7.0.0"
+    id("application")
+    // java
 }
 
 group = "org.example"
@@ -18,6 +20,24 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.wrapper {
+    distributionType = Wrapper.DistributionType.ALL
+}
+
+application {
+    mainClass.set("org.example.Main")
+}
+
+tasks.register<JavaExec>("runMe") {
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass = "org.example.Main"
+}
+
+task<JavaExec>("runMe2") {
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass = "org.example.Main"
 }
 
 //tasks.jar {

@@ -1,4 +1,4 @@
-Bundle-Name: Service listener example
+Bundle-Name: Fuyang's osgi mini example
 Bundle-Description: A bundle that displays messages at startup and when service events occur
 Bundle-Vendor: Fuyang Liu A/S
 Bundle-Version: 1.0.0
